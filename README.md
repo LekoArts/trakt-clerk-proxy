@@ -18,6 +18,7 @@ One of those providers is [Trakt](https://trakt.tv) as it requires an `trakt-api
 
 1. Deploy it to Cloudflare with `pnpm run deploy`
 1. Add `CLIENT_ID` as a [Secret](https://developers.cloudflare.com/workers/configuration/secrets/#adding-secrets-to-your-project) to the deployed worker. You can get the `CLIENT_ID` from your [Trakt OAuth page](https://trakt.tv/oauth/applications).
+1. Use the URL of the deployed Cloudflare Worker as the **User info URL** inside your Clerk dashboard for the OAuth connection.
 
 ## Local development
 
